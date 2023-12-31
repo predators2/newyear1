@@ -10,7 +10,7 @@
 	p{font-size:48px;}
 	p{font-family:"楷体";}
 	</style>
-    <title>兔年大吉</title>
+    <title>元旦快乐</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -84,7 +84,7 @@
         </div>
         <div class="stage-container remove">
             <div class="page_two hide">
-                <div id="text" style="display:none;"><p>倒计时<br><br>还有<span id="time"></span><br><span id="text1"></span><br>哇哈哈哈！我是吕杭营🧨<br>共欢新故岁🧨<br>迎送一宵中🧨<br>长路浩浩荡荡<br>万事尽可期待[awa]<br><br>彩蛋:点击屏幕任意地方即可放烟花<br><br><br><span id="copyright"></span></p></div>
+                <div id="text" style="display:none;"><p>倒计时<br><br>还有<span id="time"></span><br><span id="text1"></span><br>共欢新故岁🧨<br>迎送一宵中🧨<br>长路浩浩荡荡<br>万事尽可期待<br>李晓祝你天天发财[awa]<br><br>彩蛋:点击屏幕任意地方即可放烟花<br><br><br><span id="copyright"></span></p></div>
                 <div class="type_words" id="contents" style="font-size:1.15rem;line-height:1.5rem;"></div>
             </div>
             <div class="canvas-container">
@@ -232,7 +232,7 @@
     var todayHour = today.getHours()
     var todayMinute = today.getMinutes()
     var todaySecond = today.getSeconds()
-    var t1 = Date.UTC(newYear, 1, 22, 0, 00, 00)
+    var t1 = Date.UTC(newYear, 1, 1, 0, 00, 00)
     var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond)
     var diff = t1 - t2
     var diff2 = t2-t1
@@ -248,8 +248,8 @@
     var diff2Minutes = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours) / minutes)
     var diff2Seconds = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours - diff2Minutes *
         minutes) / seconds)
-     if(todayMonth==1){if(todayDate==22){document.getElementById("text1").innerHTML =  "现在是大年初一,祝你"+todayYear+"癸卯兔年快乐！"}}
-     else{document.getElementById("text1").innerHTML =  "提前祝你"+todayYear+"新年快乐"}
+     if(todayMonth==1){if(todayDate==1){document.getElementById("text1").innerHTML =  "现在是一月一日,祝你"+todayYear+"元旦快乐！"}}
+     else{document.getElementById("text1").innerHTML =  "提前祝你"+newYear+"新年快乐"}
      document.getElementById("time").innerHTML =  diffDays + "天" + diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒"+"新的一年"
 }
 time()
